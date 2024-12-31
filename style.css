@@ -26,18 +26,36 @@ a {
 }
 
 .info-bar__contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 20px;
-  padding: 10px 0;
-  background-color: var(--color-green-200);
+  display: none;
+}
+@media (min-width: 992px) {
+  .info-bar__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 0;
+    background-color: var(--color-green-200);
+  }
 }
 .info-bar__contact-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 5px;
+  display: none;
+}
+@media (min-width: 992px) {
+  .info-bar__contact-option:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1440px) {
+  .info-bar__contact-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+  }
 }
 .info-bar__contact-option p {
   display: flex;

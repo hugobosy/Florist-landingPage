@@ -1,14 +1,26 @@
 @import '../common';
 .info-bar {
   &__contact {
-    @include flex-center;
-    column-gap: 20px;
-    padding: 10px 0;
-    background-color: var(--color-green-200);
+    display: none;
+    @include media-from(md) {
+      @include flex-center;
+      column-gap: 20px;
+      padding: 10px 0;
+      background-color: var(--color-green-200);
+    }
 
     &-option {
-      @include flex-center;
-      column-gap: 5px;
+      display: none;
+      @include media-from(md) {
+        &:first-child {
+          @include flex-center;
+          column-gap: 5px;
+        }
+        @include media-from(xl) {
+          @include flex-center;
+          column-gap: 5px;
+        }
+      }
 
       p {
         @include flex-center;
