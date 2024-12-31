@@ -1,0 +1,23 @@
+@mixin thin {
+  font-weight: var(--font-thin);
+}
+
+@mixin regular {
+  font-weight: var(--font-regular);
+}
+
+@mixin medium {
+  font-weight: var(--font-medium);
+}
+
+@mixin bold {
+  font-weight: var(--font-bold);
+}
+
+@mixin fontColor($color) {
+  color: $color;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+}
